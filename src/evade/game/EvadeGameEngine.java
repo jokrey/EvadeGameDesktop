@@ -1,15 +1,14 @@
 package evade.game;
 
-import util.animation.engine.AnimationEngine;
 import util.animation.engine.MovingAnimationObject;
+import util.animation.engine.TickEngine;
 import util.animation.pipeline.AnimationObject;
 import util.animation.util.*;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class EvadeGameEngine extends AnimationEngine {
+public class EvadeGameEngine extends TickEngine {
     public static final double max_av_sps = 10.0d;
     public static final double min_av_sps = 0.1d;
     public double average_spawns_per_second = 3.5d;
