@@ -4,6 +4,7 @@ import util.animation.engine.MovingAnimationObject;
 import util.animation.engine.TickEngine;
 import util.animation.pipeline.AnimationObject;
 import util.animation.util.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -287,13 +288,13 @@ public class EvadeGameEngine extends TickEngine {
 //OLD - VERY SMALL, no advanced systems
 //package evade.game;
 //
-//		import util.UTIL;
-//		import util.animation.engine.AnimationEngine;
-//		import util.animation.engine.MovingAnimationObject;
-//		import util.animation.pipeline.AnimationObject;
-//		import util.animation.util.*;
+//		import neural_network.abstract_logic.UTIL;
+//		import neural_network.abstract_logic.animation.engine.AnimationEngine;
+//		import neural_network.abstract_logic.animation.engine.MovingAnimationObject;
+//		import neural_network.abstract_logic.animation.pipeline.AnimationObject;
+//		import neural_network.abstract_logic.animation.neural_network.abstract_logic.*;
 //
-//		import java.util.List;
+//		import java.neural_network.abstract_logic.List;
 //
 //public class EvadeGameEngine extends AnimationEngine {
 ////    @Override public Dimension getVirtualBoundaries() {return new Dimension(500, 500); }
