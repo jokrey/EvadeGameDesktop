@@ -43,7 +43,7 @@ public class EvadeGameEngine extends TickEngine {
     @Override public void mouseClicked(int mouseCode) {
         if (isPaused() || gameOver) {
             if (game_points <= 0.0d && (mouseP.getY() > getVirtualLimit_height() * 0.85d)) {
-                double x = (double) (mouseP.getX() / ((float) getVirtualLimit_width()));
+                double x = mouseP.getX() / ((float) getVirtualLimit_width());
                 x *= max_av_sps - min_av_sps;
                 average_spawns_per_second = x + min_av_sps;
                 double d = average_spawns_per_second;
@@ -76,7 +76,7 @@ public class EvadeGameEngine extends TickEngine {
     }
 
     private AEPoint mouseP = null;
-    @Override public void locationInputChanged(AEPoint p) {
+    @Override public void locationInputChanged(AEPoint p, boolean mousePressed) {
         mouseP=p;
     }
 
