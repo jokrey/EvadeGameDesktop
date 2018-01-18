@@ -1,6 +1,6 @@
-package evade.game;
+package jokrey.game.evade;
 
-import util.animation.util.AEColor;
+import jokrey.utilities.animation.util.AEColor;
 
 public class ScoreSet implements Comparable<ScoreSet> {
     private final  AEColor color;

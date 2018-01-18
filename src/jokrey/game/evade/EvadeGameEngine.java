@@ -1,9 +1,9 @@
-package evade.game;
+package jokrey.game.evade;
 
-import util.animation.engine.MovingAnimationObject;
-import util.animation.engine.TickEngine;
-import util.animation.pipeline.AnimationObject;
-import util.animation.util.*;
+import jokrey.utilities.animation.engine.MovingAnimationObject;
+import jokrey.utilities.animation.engine.TickEngine;
+import jokrey.utilities.animation.pipeline.AnimationObject;
+import jokrey.utilities.animation.util.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

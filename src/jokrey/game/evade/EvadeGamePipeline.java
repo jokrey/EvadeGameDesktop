@@ -1,11 +1,11 @@
-package evade.game;
+package jokrey.game.evade;
 
-import util.animation.engine.AnimationEngine;
-import util.animation.pipeline.AnimationDrawer;
-import util.animation.pipeline.AnimationPipeline;
-import util.animation.util.AEColor;
-import util.animation.util.AEPoint;
-import util.animation.util.AERect;
+import jokrey.utilities.animation.engine.AnimationEngine;
+import jokrey.utilities.animation.pipeline.AnimationDrawer;
+import jokrey.utilities.animation.pipeline.AnimationPipeline;
+import jokrey.utilities.animation.util.AEColor;
+import jokrey.utilities.animation.util.AEPoint;
+import jokrey.utilities.animation.util.AERect;
 
 public class EvadeGamePipeline extends AnimationPipeline {
     public EvadeGamePipeline(AnimationDrawer drawer) {
