@@ -32,9 +32,9 @@ public class EvadeGameEngine extends TickEngine {
 
         initateObjectAt(0, lineToMouse = new AnimationObject(null, AnimationObject.LINE,randClr));
         initateObjectAt(1, gameBall = new MovingAnimationObject(
-                getVirtualLimit_width()/2,
-                getVirtualLimit_height()/2,
-                0,0,0,0,55,55,
+                getVirtualLimit_width()/2 - 56/2,
+                getVirtualLimit_height()/2 - 56/2,
+                0,0,0,0,56,56,
                 MovingAnimationObject.OVAL,randClr));
         this.game_points = 0.0d;
         this.gameOver = true;
