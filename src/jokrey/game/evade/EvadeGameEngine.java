@@ -30,8 +30,8 @@ public class EvadeGameEngine extends TickEngine {
         clearObjects();
         AEColor randClr = AEColor.getRandomColor(100, 255);
 
-        initateObjectAt(0, lineToMouse = new AnimationObject(null, AnimationObject.LINE,randClr));
-        initateObjectAt(1, gameBall = new MovingAnimationObject(
+        initiateObjectAt(0, lineToMouse = new AnimationObject(null, AnimationObject.LINE,randClr));
+        initiateObjectAt(1, gameBall = new MovingAnimationObject(
                 getVirtualLimit_width()/2 - 56/2,
                 getVirtualLimit_height()/2 - 56/2,
                 0,0,0,0,56,56,
@@ -105,7 +105,7 @@ public class EvadeGameEngine extends TickEngine {
                 double randomNr5;
                 int i;
                 if (orientation == 0) {
-                    randomNr = AE_UTIL.getRandomNr((-diameter_w) + 1.0d, (double) (getVirtualLimit_width() - 1));
+                    randomNr = AE_UTIL.getRandomNr((-diameter_w) + 1.0d, getVirtualLimit_width() - 1);
                     d = (-diameter_h) + 1.0d;
                     randomNr2 = AE_UTIL.getRandomNr(((double) (-getVirtualLimit_height())) / 55.0d, ((double) getVirtualLimit_height()) / 55.0d);
                     randomNr3 = AE_UTIL.getRandomNr(((double) getVirtualLimit_height()) / 55.0d, ((double) getVirtualLimit_height()) / 15.0d);
@@ -116,10 +116,10 @@ public class EvadeGameEngine extends TickEngine {
                     } else {
                         i = 1;
                     }
-                    initateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
+                    initiateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
                 } else if (orientation == 1) {
-                    randomNr = (double) (getVirtualLimit_width() - 1);
-                    d = AE_UTIL.getRandomNr((-diameter_h) + 1.0d, (double) (getVirtualLimit_height() - 1));
+                    randomNr = getVirtualLimit_width() - 1;
+                    d = AE_UTIL.getRandomNr((-diameter_h) + 1.0d, getVirtualLimit_height() - 1);
                     randomNr2 = -AE_UTIL.getRandomNr(((double) getVirtualLimit_height()) / 55.0d, ((double) getVirtualLimit_height()) / 15.0d);
                     randomNr3 = AE_UTIL.getRandomNr(((double) (-getVirtualLimit_height())) / 55.0d, ((double) getVirtualLimit_height()) / 55.0d);
                     randomNr4 = -AE_UTIL.getRandomNr(0.0d, ((double) getVirtualLimit_height()) / 33.0d);
@@ -129,10 +129,10 @@ public class EvadeGameEngine extends TickEngine {
                     } else {
                         i = 1;
                     }
-                    initateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
+                    initiateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
                 } else if (orientation == 2) {
-                    randomNr = AE_UTIL.getRandomNr((-diameter_w) + 1.0d, (double) (getVirtualLimit_width() - 1));
-                    d = (double) (getVirtualLimit_height() - 1);
+                    randomNr = AE_UTIL.getRandomNr((-diameter_w) + 1.0d, getVirtualLimit_width() - 1);
+                    d = getVirtualLimit_height() - 1;
                     randomNr2 = AE_UTIL.getRandomNr(((double) (-getVirtualLimit_height())) / 55.0d, ((double) getVirtualLimit_height()) / 55.0d);
                     randomNr3 = -AE_UTIL.getRandomNr(((double) getVirtualLimit_height()) / 55.0d, ((double) getVirtualLimit_height()) / 15.0d);
                     randomNr4 = AE_UTIL.getRandomNr(((double) (-getVirtualLimit_height())) / 55.0d, ((double) getVirtualLimit_height()) / 55.0d);
@@ -142,10 +142,10 @@ public class EvadeGameEngine extends TickEngine {
                     } else {
                         i = 1;
                     }
-                    initateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
+                    initiateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
                 } else if (orientation == 3) {
                     randomNr = (-diameter_w) + 1.0d;
-                    d = AE_UTIL.getRandomNr((-diameter_h) + 1.0d, (double) (getVirtualLimit_height() - 1));
+                    d = AE_UTIL.getRandomNr((-diameter_h) + 1.0d, getVirtualLimit_height() - 1);
                     randomNr2 = AE_UTIL.getRandomNr(((double) getVirtualLimit_height()) / 55.0d, ((double) getVirtualLimit_height()) / 15.0d);
                     randomNr3 = AE_UTIL.getRandomNr(((double) (-getVirtualLimit_height())) / 55.0d, ((double) getVirtualLimit_height()) / 55.0d);
                     randomNr4 = AE_UTIL.getRandomNr(0.0d, ((double) getVirtualLimit_height()) / 33.0d);
@@ -155,7 +155,7 @@ public class EvadeGameEngine extends TickEngine {
                     } else {
                         i = 1;
                     }
-                    initateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
+                    initiateNewObject(new MovingAnimationObject(randomNr, d, randomNr2, randomNr3, randomNr4, randomNr5, diameter_w, diameter_h, i, AEColor.getRandomColor(100,255)));
                 }
             }
             if (this.mouseP == null) {
@@ -166,7 +166,7 @@ public class EvadeGameEngine extends TickEngine {
                 lineToMouse.setX(0);
                 lineToMouse.setY(0);
             } else {
-                double[] a_s = AE_UTIL.angleVelocityToXYVelocity((double) AE_UTIL.getAngle(new AEPoint(gameBall.getMidAsPoint().x, gameBall.getMidAsPoint().y), new AEPoint(mouseP.x, mouseP.y)), ((double) getVirtualLimit_height()) / 1.6d);
+                double[] a_s = AE_UTIL.angleVelocityToXYVelocity(AE_UTIL.getAngle(new AEPoint(gameBall.getMidAsPoint().x, gameBall.getMidAsPoint().y), new AEPoint(mouseP.x, mouseP.y)), ((double) getVirtualLimit_height()) / 1.6d);
                 gameBall.setF_X(a_s[0]);
                 gameBall.setF_Y(a_s[1]);
                 lineToMouse.setW(gameBall.getMid().x);
