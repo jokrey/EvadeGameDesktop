@@ -82,7 +82,7 @@ public class EvadeGameEngine extends TickEngine {
 
 
 
-    @Override protected void calculateTick() {
+    @Override protected void calculateTickImpl() {
         if (this.gameOver) {
             if(this.game_points!=0) {//only once called after each gameOver.
                 upandvalidateScores();
